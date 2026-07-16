@@ -48,7 +48,7 @@ public class GameListener implements Listener {
     public void onQuit(PlayerQuitEvent event) {
 
     Player player = event.getPlayer();
-
+        player.getInventory().clear();
         if (plugin.getGameManager().isGameRunning()) {
 
             plugin.getGameManager()
@@ -63,6 +63,10 @@ public class GameListener implements Listener {
      */
     @EventHandler
     public void onDamage(EntityDamageByEntityEvent event) {
+        if (!plugin.getGameManager().isGameRunning()) {
+            event.setCancelled(true);
+            return;
+        }
         if (!(event.getEntity() instanceof Player victim))
             return;
         if (!(event.getDamager() instanceof Player attacker))
