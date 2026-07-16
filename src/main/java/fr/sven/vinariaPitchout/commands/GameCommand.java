@@ -56,7 +56,7 @@ public class GameCommand implements CommandExecutor {
 
         if (args[0].equalsIgnoreCase("start")) {
 
-
+            plugin.getGameManager().startGame();
             startGame();
 
 
