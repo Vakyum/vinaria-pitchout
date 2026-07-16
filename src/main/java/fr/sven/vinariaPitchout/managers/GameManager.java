@@ -68,16 +68,13 @@ public class GameManager {
     public void startPlaying() {
         gameRunning = true;
         System.out.println("Start playing lancé");
-        Location spawn = new Location(
-                Bukkit.getWorld("world"),
-                100,
-                210,
-                100
+        Bukkit.dispatchCommand(
+                Bukkit.getConsoleSender(),
+                "spreadplayers 100 100 10 40 true @a"
         );
         for (Player player : Bukkit.getOnlinePlayers()) {
             player.setGameMode(GameMode.ADVENTURE);
             player.getInventory().clear();
-            player.teleport(spawn);
             player.setLevel(0);
             player.getInventory().addItem(new ItemStack(Material.STICK, 1));
             player.getInventory().addItem(new ItemStack(Material.SNOWBALL, 16));
