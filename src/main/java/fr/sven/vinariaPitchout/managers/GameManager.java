@@ -70,7 +70,7 @@ public class GameManager {
         System.out.println("Start playing lancé");
         Bukkit.dispatchCommand(
                 Bukkit.getConsoleSender(),
-                "spreadplayers 100 100 10 40 false @a"
+                "spreadplayers 100 100 20 40 false @a"
         );
         for (Player player : Bukkit.getOnlinePlayers()) {
             player.setGameMode(GameMode.ADVENTURE);
