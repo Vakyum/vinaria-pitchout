@@ -1,0 +1,24 @@
+name: VinariaPitchout
+version: 1.0
+main: fr.sven.vinariaPitchout.VinariaPitchout
+api-version: '1.20'
+
+author: Sven
+description: Mini-jeu knockback avec bâton, boule de neige et plume
+
+commands:
+
+  game:
+    description: Lance le jeu
+    usage: /game start
+    permission: game.admin
+
+  reset:
+    description: Reset les données du joueur
+    usage: /reset
+
+permissions:
+
+  game.admin:
+    description: Permission pour lancer le jeu
+    default: op

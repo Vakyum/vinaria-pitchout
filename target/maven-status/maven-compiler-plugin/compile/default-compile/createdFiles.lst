@@ -1,0 +1,8 @@
+fr\sven\vinariaPitchout\utils\Countdown.class
+fr\sven\vinariaPitchout\VinariaPitchout.class
+fr\sven\vinariaPitchout\commands\ResetCommand.class
+fr\sven\vinariaPitchout\managers\CooldownManager.class
+fr\sven\vinariaPitchout\listeners\GameListener.class
+fr\sven\vinariaPitchout\managers\KnockbackManager.class
+fr\sven\vinariaPitchout\utils\Countdown$1.class
+fr\sven\vinariaPitchout\commands\GameCommand.class
